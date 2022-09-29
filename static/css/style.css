@@ -1,0 +1,15 @@
+body {
+    background-image: url(../images/fundo.png);
+    max-width: 900px;
+    margin-left: 200px;
+    margin-right: 400px;
+}
+
+
+div.direitos{
+    text-align: center;
+}
+
+div.topo{
+    margin-top: 25px;
+}
