@@ -27,11 +27,18 @@ def quemsomos():
     return render_template('public/quemsomos.html')
 
 @app.route("/contatos")
-def contato():
+def contatos():
     return render_template('public/contatos.html')
 
+@app.route("/users", methods=['GET'])
+def usersGet():
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM CONTATOS")
+    todosChamados = cur.fetchall()
+    return render_template('public/users.html', todosChamados = todosChamados)
+
 @app.route('/contatos', methods=['GET', 'POST'])
-def contatos():
+def contatosPost():
     if request.method == "POST":
         email = request.form['email']
         assunto = request.form['assunto']
