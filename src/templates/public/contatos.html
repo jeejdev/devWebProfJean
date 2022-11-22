@@ -15,7 +15,7 @@
             <span style="margin-left: 440px;">
             <a href="/">Home</a> |
             <a href="quemsomos">Quem somos?</a> |
-            <a href="contato">Contato</a>
+            <a href="contatos">Contato</a>
             </span>
 
         </div>
@@ -29,13 +29,13 @@
             <hr>
         </div>
         <div>
-            <form>
+            <form method="post" action="/contatos">
                 <label for="email">Seu e-mail:</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" name="email"><br>
                 <label for="assunto">Assunto:</label><br>
-                <input type="text" id="assunto" name="assunto"><br>
+                <input type="text" name="assunto"><br>
                 <label for="desc">Descrição:</label><br>
-                <textarea name="" id="" cols="19" rows="2"></textarea><br>
+                <textarea name="desc" cols="19" rows="2"></textarea><br>
                 <input type="submit" value="Enviar">
               </form>
         </div>
