@@ -2,7 +2,6 @@
 {% block content %}
 
         <div>
-
             <h2>Entre em contato</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque autem esse ut iure iusto beatae! Aliquam ab sed provident eveniet, perferendis cupiditate ipsa enim tempore laborum voluptas vitae earum.</p>
@@ -13,11 +12,11 @@
         <div>
             <form method="post" action="/contatos">
                 <label for="email">Seu e-mail:</label><br>
-                <input type="email" name="email"><br>
+                <input type="email" name="email" maxlength="45"><br>
                 <label for="assunto">Assunto:</label><br>
-                <input type="text" name="assunto"><br>
+                <input type="text" name="assunto" maxlength="45"><br>
                 <label for="desc">Descrição:</label><br>
-                <textarea name="desc" cols="19" rows="2"></textarea><br>
+                <textarea name="desc" cols="19" rows="2" maxlength="255"></textarea><br>
                 <input type="submit" value="Enviar">
               </form>
         </div>
